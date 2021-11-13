@@ -30,7 +30,7 @@ export default {
     return {
       homepageUrl: require('../assert/image/boy/盲盒男友待抽奖背景.jpg'),
       logoUrl: require('../assert/image/boy/盲盒男友标题.png'),
-      bgUrl: require('../assert/image/boy/盲盒男友抽奖机.png'),
+      bgUrl: require('../assert/image/boy/抽奖机.png'),
       coverUrl: require('../assert/image/boy/盲盒12.png'),
       coverActiveUrl: require('../assert/image/boy/盲盒1.png'),
       btnUrl: require('../assert/image/boy/抽盲盒按钮.png'),
@@ -46,7 +46,7 @@ export default {
       winItem: {
         name: '1',
         id: 1,
-        url: require('../assert/image/logo.jpg')
+        url: require('../assert/image/boy/霸总男友.png')
       },
       boyList: [
         '霸总男友',
@@ -149,7 +149,7 @@ export default {
   .backgroundDiv {
     position: absolute;
     left: 50%;
-    width: 100%;
+    width: 83%;
     .background {
       position: relative;
       top: -50%;
@@ -180,11 +180,11 @@ export default {
     align-items: center;
     flex-direction: column;
     .winImg {
-      margin-top: 40%;
+      margin-top: 30%;
       width: 70%;
     }
     .tryBtn{
-      margin-top: 5%;
+      margin-top: 10%;
       width: 80%;
       background-color: #F9CDAD;
     }

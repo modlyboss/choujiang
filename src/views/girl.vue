@@ -47,7 +47,7 @@ export default {
       winItem: {
         name: '1',
         id: 1,
-        url: require('../assert/image/logo.jpg')
+        url: require('../assert/image/girl/傲娇女友.png')
       },
       boyList: [
         '霸总男友',
