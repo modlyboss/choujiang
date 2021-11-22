@@ -1,6 +1,7 @@
 <template>
   <div class="cb-keyboard-example">
     <input
+      unselectable="on"
       class="input"
       ref="input1"
       v-model="value1"
@@ -21,7 +22,8 @@
       v-model="value1"
       type="money"
       maxLength="15"
-      @changeCursor="changeCursor1(arguments)"/>
+      @changeCursor="changeCursor1(arguments)"
+      @change="change1(arguments)"/>
     <CbKeyboard
       ref="CbKeyboard2"
       v-model="value2"
@@ -46,6 +48,11 @@ export default {
     }
   },
   methods: {
+    change1(args) {
+      console.log('...........')
+      console.log(args[0])
+      this.value1 = args[0]
+    },
     focus1() {
       this.$refs.input1.setAttribute('readonly', 'readonly')
       setTimeout(() => {
